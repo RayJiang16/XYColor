@@ -154,8 +154,7 @@
 		A556BE7C22E0659700EE743B = {
 			isa = PBXGroup;
 			children = (
-				A556BE8822E0659700EE743B /* XYColor */,
-				A556BE9722E065B300EE743B /* XYColorOC */,
+				A57C3CC622E592D600ECD029 /* Sources */,
 				A556BEC122E06ED800EE743B /* Example */,
 				A556BEDF22E0740900EE743B /* Example-OC */,
 				A556BE8722E0659700EE743B /* Products */,
@@ -254,6 +253,15 @@
 				A556BEF222E0740B00EE743B /* main.m */,
 			);
 			path = "Example-OC";
+			sourceTree = "<group>";
+		};
+		A57C3CC622E592D600ECD029 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A556BE8822E0659700EE743B /* XYColor */,
+				A556BE9722E065B300EE743B /* XYColorOC */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -660,7 +668,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/XYColor/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -688,7 +696,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/XYColor/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,7 +722,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYColorOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/XYColorOC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -739,7 +747,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = XYColorOC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/XYColorOC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
