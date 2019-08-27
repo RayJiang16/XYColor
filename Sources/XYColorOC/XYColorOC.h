@@ -18,3 +18,4 @@ FOUNDATION_EXPORT const unsigned char XYColorOCVersionString[];
 
 #import "UIView+XYColorOC.h"
 #import "CALayer+XYColorOC.h"
+#import "UIColor+XYColorOC.h"

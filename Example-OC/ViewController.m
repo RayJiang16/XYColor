@@ -41,15 +41,23 @@
     
 }
 
+//- (UIColor *)color1 {
+//    if (!_color1) {
+//        _color1 = [UIColor colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
+//            if (traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
+//                return UIColor.yellowColor;
+//            } else {
+//                return UIColor.greenColor;
+//            }
+//        }];
+//    }
+//    return _color1;
+//}
+
+/// 等价于上面的创建方法
 - (UIColor *)color1 {
     if (!_color1) {
-        _color1 = [UIColor colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
-            if (traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark) {
-                return UIColor.yellowColor;
-            } else {
-                return UIColor.greenColor;
-            }
-        }];
+        _color1 = [UIColor xy_createWithLightColor:UIColor.yellowColor darkColor:UIColor.greenColor];
     }
     return _color1;
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A507B3B6231501760013860B /* Ex+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507B3B5231501760013860B /* Ex+UIColor.swift */; };
+		A507B3BB2315091C0013860B /* UIColor+XYColorOC.h in Headers */ = {isa = PBXBuildFile; fileRef = A507B3B92315091C0013860B /* UIColor+XYColorOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A507B3BC2315091C0013860B /* UIColor+XYColorOC.m in Sources */ = {isa = PBXBuildFile; fileRef = A507B3BA2315091C0013860B /* UIColor+XYColorOC.m */; };
 		A556BE8B22E0659700EE743B /* XYColor.h in Headers */ = {isa = PBXBuildFile; fileRef = A556BE8922E0659700EE743B /* XYColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A556BE9A22E065B300EE743B /* XYColorOC.h in Headers */ = {isa = PBXBuildFile; fileRef = A556BE9822E065B300EE743B /* XYColorOC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A556BEA022E0660500EE743B /* _PrivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556BE9F22E0660500EE743B /* _PrivateView.swift */; };
@@ -80,6 +83,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A507B3B5231501760013860B /* Ex+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+UIColor.swift"; sourceTree = "<group>"; };
+		A507B3B92315091C0013860B /* UIColor+XYColorOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+XYColorOC.h"; sourceTree = "<group>"; };
+		A507B3BA2315091C0013860B /* UIColor+XYColorOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XYColorOC.m"; sourceTree = "<group>"; };
 		A556BE8622E0659700EE743B /* XYColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A556BE8922E0659700EE743B /* XYColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYColor.h; sourceTree = "<group>"; };
 		A556BE8A22E0659700EE743B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A556BE9F22E0660500EE743B /* _PrivateView.swift */,
+				A507B3B5231501760013860B /* Ex+UIColor.swift */,
 				A556BEA122E0662A00EE743B /* Ex+UIView.swift */,
 				A556BEA322E0664D00EE743B /* Ex+CALayer.swift */,
 			);
@@ -208,6 +215,8 @@
 			children = (
 				A556BEB422E06B1D00EE743B /* _XYColor_PrivateView.h */,
 				A556BEB522E06B1D00EE743B /* _XYColor_PrivateView.m */,
+				A507B3B92315091C0013860B /* UIColor+XYColorOC.h */,
+				A507B3BA2315091C0013860B /* UIColor+XYColorOC.m */,
 				A556BEB022E0698100EE743B /* UIView+XYColorOC.h */,
 				A556BEB122E0698100EE743B /* UIView+XYColorOC.m */,
 				A556BEB822E06D2900EE743B /* CALayer+XYColorOC.h */,
@@ -283,6 +292,7 @@
 				A556BEB622E06B1D00EE743B /* _XYColor_PrivateView.h in Headers */,
 				A556BEB222E0698100EE743B /* UIView+XYColorOC.h in Headers */,
 				A556BEBA22E06D2900EE743B /* CALayer+XYColorOC.h in Headers */,
+				A507B3BB2315091C0013860B /* UIColor+XYColorOC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A507B3B6231501760013860B /* Ex+UIColor.swift in Sources */,
 				A556BEA422E0664D00EE743B /* Ex+CALayer.swift in Sources */,
 				A556BEA022E0660500EE743B /* _PrivateView.swift in Sources */,
 				A556BEA222E0662A00EE743B /* Ex+UIView.swift in Sources */,
@@ -461,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A507B3BC2315091C0013860B /* UIColor+XYColorOC.m in Sources */,
 				A556BEB322E0698100EE743B /* UIView+XYColorOC.m in Sources */,
 				A556BEB722E06B1D00EE743B /* _XYColor_PrivateView.m in Sources */,
 				A556BEBB22E06D2900EE743B /* CALayer+XYColorOC.m in Sources */,
@@ -676,7 +688,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -704,7 +716,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -719,6 +731,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -730,7 +743,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColorOC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -744,6 +757,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -755,7 +769,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColorOC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -769,6 +783,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -786,6 +801,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,6 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Example-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -819,6 +836,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Example-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

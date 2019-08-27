@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XYColor'
-  s.version          = '0.4.0'
+  s.version          = '0.6.0'
   s.summary          = 'A short description of XYColor.'
 
   s.homepage         = 'https://github.com/RayJiang16/XYColor'

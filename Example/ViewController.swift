@@ -11,14 +11,19 @@ import XYColor
 
 class ViewController: UIViewController {
     
+//    private lazy var color1: UIColor = {
+//        return UIColor { (traitCollection) -> UIColor in
+//            if traitCollection.userInterfaceStyle == .dark {
+//                return .yellow
+//            } else {
+//                return .green
+//            }
+//        }
+//    }()
+
+    /// 等价于上面的创建方法
     private lazy var color1: UIColor = {
-        return UIColor { (traitCollection) -> UIColor in
-            if traitCollection.userInterfaceStyle == .dark {
-                return .yellow
-            } else {
-                return .green
-            }
-        }
+        return UIColor.create(light: .yellow, dark: .green)
     }()
     
     private lazy var button: UIButton = {
