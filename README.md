@@ -56,6 +56,11 @@ private var customLayer: CALayer = {
     ...
     return layer
 }()
+
+// Create color
+private var color: UIColor = {
+    return UIColor.create(light: .black, dark: .white)
+}()
 ```
 
 **Objective-C**
@@ -78,6 +83,14 @@ private var customLayer: CALayer = {
     [_customLayer xy_setLayerShadowColor:UIColor.labelColor with:self.customView];
     [_customLayer xy_setLayerBackgroundColor:UIColor.systemBackgroundColor with:self.customView];
     ...
+}
+
+// Create color
+- (UIColor *)color {
+    if (!_color) {
+        _color = [UIColor xy_createWithLightColor:UIColor.blackColor darkColor:UIColor.whiteColor];
+    }
+    return _color;
 }
 ```
 
