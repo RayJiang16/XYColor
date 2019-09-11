@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XYColor'
-  s.version          = '0.6.1'
+  s.version          = '1.0.0'
   s.summary          = 'An easy way to adapter dark mode on CALayer.'
 
   s.homepage         = 'https://github.com/RayJiang16/XYColor'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/RayJiang16/XYColor.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-  s.swift_version = '5.1'
+  s.swift_version = '5.0'
 
   s.source_files = 'Sources/XYColor/Core/**/*.swift'
 
