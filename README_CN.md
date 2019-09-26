@@ -1,7 +1,7 @@
 # XYColor
 一个快速适配 Dark Mode 的框架
 
-## 需求
+## 要求
 
 - iOS 8.0+
 - Swift 5.0+
