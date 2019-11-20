@@ -127,6 +127,8 @@
 		A5A141B22385198100201A82 /* UIView+PrivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PrivateView.swift"; sourceTree = "<group>"; };
 		A5A141B423851A5C00201A82 /* UIView+PrivateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PrivateView.h"; sourceTree = "<group>"; };
 		A5A141B523851A5C00201A82 /* UIView+PrivateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PrivateView.m"; sourceTree = "<group>"; };
+		A5A141BA23851D3700201A82 /* XYColor.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = XYColor.podspec; sourceTree = "<group>"; };
+		A5A141BB23851D3D00201A82 /* XYColorOC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = XYColorOC.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,8 @@
 		A556BE7C22E0659700EE743B = {
 			isa = PBXGroup;
 			children = (
+				A5A141BA23851D3700201A82 /* XYColor.podspec */,
+				A5A141BB23851D3D00201A82 /* XYColorOC.podspec */,
 				A57C3CC622E592D600ECD029 /* Sources */,
 				A556BEC122E06ED800EE743B /* Example */,
 				A556BEDF22E0740900EE743B /* Example-OC */,
@@ -700,7 +704,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -728,7 +732,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -755,7 +759,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColorOC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -781,7 +785,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.RayJiang.XYColorOC;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
