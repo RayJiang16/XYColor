@@ -32,9 +32,13 @@ class _PrivateView: UIView {
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        for callback in callbackList {
-            callback?()
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 13.0, *) {
+            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+                for callback in callbackList {
+                    callback?()
+                }
+            }
         }
     }
-    
 }

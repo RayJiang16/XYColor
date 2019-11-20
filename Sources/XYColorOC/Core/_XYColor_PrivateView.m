@@ -29,8 +29,13 @@
 }
 
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
-    for (TraitCollectionCallback callback in self.callbackList) {
-        callback();
+    [super traitCollectionDidChange:previousTraitCollection];
+    if (@available(iOS 13.0, *)) {
+        if([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
+            for (TraitCollectionCallback callback in self.callbackList) {
+                callback();
+            }
+        }
     }
 }
 
