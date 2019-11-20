@@ -8,22 +8,7 @@
 
 import UIKit
 
-private var _privateViewKey: UInt8 = 0
-
 extension UIView {
-
-    private var _pv: _PrivateView? {
-        get {
-            return objc_getAssociatedObject(self, &_privateViewKey) as? _PrivateView
-        }
-        set {
-            if let newValue = newValue, _pv != newValue {
-                _pv?.removeFromSuperview()
-                insertSubview(newValue, at: 0)
-                objc_setAssociatedObject(self, &_privateViewKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
-            }
-        }
-    }
 
     public func setLayerBorderColor(_ color: UIColor) {
         if #available(iOS 13.0, *) {

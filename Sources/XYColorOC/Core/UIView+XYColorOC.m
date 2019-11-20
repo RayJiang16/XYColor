@@ -8,13 +8,6 @@
 
 #import "UIView+XYColorOC.h"
 #import "_XYColor_PrivateView.h"
-#import <objc/runtime.h>
-
-@interface UIView ()
-
-@property (nonatomic, strong) _XYColor_PrivateView *pv;
-
-@end
 
 @implementation UIView (XYColorOC)
 
@@ -55,21 +48,6 @@
     } else {
         self.layer.backgroundColor = color.CGColor;
     }
-}
-
-#pragma mark - pv
-static const char PrivateViewKey = '\0';
-
-- (void)setPv:(_XYColor_PrivateView *)pv {
-    if (pv != self.pv) {
-        [self.pv removeFromSuperview];
-        [self insertSubview:pv atIndex:0];
-        objc_setAssociatedObject(self, &PrivateViewKey, pv, OBJC_ASSOCIATION_RETAIN);
-    }
-}
-
-- (_XYColor_PrivateView *)pv {
-    return objc_getAssociatedObject(self, &PrivateViewKey);
 }
 
 @end

@@ -13,11 +13,9 @@
 
 - (void)xy_setLayerBorderColor:(UIColor *)color with:(UIView *)view {
     if (@available(iOS 13.0, *)) {
-        _XYColor_PrivateView *pv = [_XYColor_PrivateView new];
-        pv.hidden = YES;
-        [view addSubview:pv];
+        if (view.pv == nil) { view.pv = [_XYColor_PrivateView new]; }
         __weak CALayer *weakLayer = self;
-        [pv traitCollectionChange:^{
+        [view.pv traitCollectionChange:^{
             weakLayer.borderColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;
         }];
         self.borderColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;
@@ -28,11 +26,9 @@
 
 - (void)xy_setLayerShadowColor:(UIColor *)color with:(UIView *)view {
     if (@available(iOS 13.0, *)) {
-        _XYColor_PrivateView *pv = [_XYColor_PrivateView new];
-        pv.hidden = YES;
-        [view addSubview:pv];
+        if (view.pv == nil) { view.pv = [_XYColor_PrivateView new]; }
         __weak CALayer *weakLayer = self;
-        [pv traitCollectionChange:^{
+        [view.pv traitCollectionChange:^{
             weakLayer.shadowColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;
         }];
         self.shadowColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;
@@ -43,11 +39,9 @@
 
 - (void)xy_setLayerBackgroundColor:(UIColor *)color with:(UIView *)view {
     if (@available(iOS 13.0, *)) {
-        _XYColor_PrivateView *pv = [_XYColor_PrivateView new];
-        pv.hidden = YES;
-        [view addSubview:pv];
+        if (view.pv == nil) { view.pv = [_XYColor_PrivateView new]; }
         __weak CALayer *weakLayer = self;
-        [pv traitCollectionChange:^{
+        [view.pv traitCollectionChange:^{
             weakLayer.backgroundColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;
         }];
         self.backgroundColor = [color resolvedColorWithTraitCollection:view.traitCollection].CGColor;

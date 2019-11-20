@@ -12,9 +12,8 @@ extension CALayer {
 
     public func setBorderColor(_ color: UIColor, with target: UIView) {
         if #available(iOS 13.0, *) {
-            let _pv = _PrivateView()
-            target.addSubview(_pv)
-            _pv.traitCollectionChange({ [weak self] in
+            if target._pv == nil { target._pv = _PrivateView() }
+            target._pv?.traitCollectionChange({ [weak self] in
                 guard let self = self else { return }
                 self.borderColor = color.resolvedColor(with: target.traitCollection).cgColor
             })
@@ -26,9 +25,8 @@ extension CALayer {
     
     public func setShadowColor(_ color: UIColor, with target: UIView) {
         if #available(iOS 13.0, *) {
-            let _pv = _PrivateView()
-            target.addSubview(_pv)
-            _pv.traitCollectionChange({ [weak self]  in
+            if target._pv == nil { target._pv = _PrivateView() }
+            target._pv?.traitCollectionChange({ [weak self]  in
                 guard let self = self else { return }
                 self.shadowColor = color.resolvedColor(with: target.traitCollection).cgColor
             })
@@ -40,9 +38,8 @@ extension CALayer {
 
     public func setBackgroundColor(_ color: UIColor, with target: UIView) {
         if #available(iOS 13.0, *) {
-            let _pv = _PrivateView()
-            target.addSubview(_pv)
-            _pv.traitCollectionChange({ [weak self]  in
+            if target._pv == nil { target._pv = _PrivateView() }
+            target._pv?.traitCollectionChange({ [weak self]  in
                 guard let self = self else { return }
                 self.backgroundColor = color.resolvedColor(with: target.traitCollection).cgColor
             })

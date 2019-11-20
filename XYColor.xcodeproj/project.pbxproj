@@ -38,6 +38,9 @@
 		A556BEF322E0740B00EE743B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A556BEF222E0740B00EE743B /* main.m */; };
 		A556BEF722E0746D00EE743B /* XYColorOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A556BE9622E065B300EE743B /* XYColorOC.framework */; };
 		A556BEF822E0746D00EE743B /* XYColorOC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A556BE9622E065B300EE743B /* XYColorOC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5A141B32385198100201A82 /* UIView+PrivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A141B22385198100201A82 /* UIView+PrivateView.swift */; };
+		A5A141B823851B6B00201A82 /* UIView+PrivateView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A141B423851A5C00201A82 /* UIView+PrivateView.h */; };
+		A5A141B923851B8200201A82 /* UIView+PrivateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A141B523851A5C00201A82 /* UIView+PrivateView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +124,9 @@
 		A556BEEF22E0740B00EE743B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A556BEF122E0740B00EE743B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A556BEF222E0740B00EE743B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5A141B22385198100201A82 /* UIView+PrivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PrivateView.swift"; sourceTree = "<group>"; };
+		A5A141B423851A5C00201A82 /* UIView+PrivateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PrivateView.h"; sourceTree = "<group>"; };
+		A5A141B523851A5C00201A82 /* UIView+PrivateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PrivateView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A556BE9F22E0660500EE743B /* _PrivateView.swift */,
+				A5A141B22385198100201A82 /* UIView+PrivateView.swift */,
 				A507B3B5231501760013860B /* Ex+UIColor.swift */,
 				A556BEA122E0662A00EE743B /* Ex+UIView.swift */,
 				A556BEA322E0664D00EE743B /* Ex+CALayer.swift */,
@@ -215,6 +222,8 @@
 			children = (
 				A556BEB422E06B1D00EE743B /* _XYColor_PrivateView.h */,
 				A556BEB522E06B1D00EE743B /* _XYColor_PrivateView.m */,
+				A5A141B423851A5C00201A82 /* UIView+PrivateView.h */,
+				A5A141B523851A5C00201A82 /* UIView+PrivateView.m */,
 				A507B3B92315091C0013860B /* UIColor+XYColorOC.h */,
 				A507B3BA2315091C0013860B /* UIColor+XYColorOC.m */,
 				A556BEB022E0698100EE743B /* UIView+XYColorOC.h */,
@@ -288,6 +297,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A141B823851B6B00201A82 /* UIView+PrivateView.h in Headers */,
 				A556BE9A22E065B300EE743B /* XYColorOC.h in Headers */,
 				A556BEB622E06B1D00EE743B /* _XYColor_PrivateView.h in Headers */,
 				A556BEB222E0698100EE743B /* UIView+XYColorOC.h in Headers */,
@@ -385,7 +395,7 @@
 				TargetAttributes = {
 					A556BE8522E0659700EE743B = {
 						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1120;
 					};
 					A556BE9522E065B300EE743B = {
 						CreatedOnToolsVersion = 11.0;
@@ -463,6 +473,7 @@
 			files = (
 				A507B3B6231501760013860B /* Ex+UIColor.swift in Sources */,
 				A556BEA422E0664D00EE743B /* Ex+CALayer.swift in Sources */,
+				A5A141B32385198100201A82 /* UIView+PrivateView.swift in Sources */,
 				A556BEA022E0660500EE743B /* _PrivateView.swift in Sources */,
 				A556BEA222E0662A00EE743B /* Ex+UIView.swift in Sources */,
 			);
@@ -476,6 +487,7 @@
 				A556BEB322E0698100EE743B /* UIView+XYColorOC.m in Sources */,
 				A556BEB722E06B1D00EE743B /* _XYColor_PrivateView.m in Sources */,
 				A556BEBB22E06D2900EE743B /* CALayer+XYColorOC.m in Sources */,
+				A5A141B923851B8200201A82 /* UIView+PrivateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
