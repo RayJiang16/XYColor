@@ -1,0 +1,20 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    strategy:
+      matrix:
+        destination: ['iOS Simulator,name=iPhone 11']
+        swift-version: [5.1]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: BuildSwift
+      run: xcodebuild -project XYColor.xcodeproj -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+    - name: BuildObjectiveC
+      run: xcodebuild -project XYColor.xcodeproj -scheme Example-OC -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
