@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XYColor'
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
   s.summary          = 'An easy way to adapter dark mode on CALayer.'
 
   s.homepage         = 'https://github.com/RayJiang16/XYColor'
